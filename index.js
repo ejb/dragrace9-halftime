@@ -3,7 +3,7 @@ const spanner = Spanner();
 const instanceId = 'rupaul-9-halftime-entries';
 const databaseId = 'season9halftime';
 
-exports.getEntries = function() {
+exports.getEntries = function(req, res) {
     // Gets a reference to a Cloud Spanner instance and database
     const instance = spanner.instance(instanceId);
     const database = instance.database(databaseId);
