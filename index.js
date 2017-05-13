@@ -1,3 +1,3 @@
 exports.helloGET = function helloGET (req, res) {
-    res(`Helloooo ladies`);
+    res.send(`Helloooo ladies`);
 };
